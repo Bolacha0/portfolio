@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <img class="capa" src="capa.jpg" alt="">
+        <h1>Gabriel Dos Santos Viana</h1>
+        <p class="subtitulo">Desenvolvedor Júnior</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="#educacao">Educação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <div id="sobre-mim" class="sobre-mim">
+        <div class="sobre-mim-texto-img">
+            <img src="avatar.png" class="icon-sobre-mim" alt="https://www.flaticon.com/free-icons/avatar">
+            <h2>Sobre mim</h2>
+        </div>
+        <p>Olá, me chamo Gabriel. Atualmente sou um profissional da área de metalmecânica com formação técnica em Fabricação Mecânica pelo SENAI. Fui campeão nacional na Olimpíada do Conhecimento pelo SENAI na modalidade de Modelagem de Protótipos e tive a honra de ser selecionado para representar o Brasil na WorldSkills 2024 em Lyon.
+            <br>Meus hobbies incluem praticar violino, ouvir música, ver vídeos no YouTube sobre impressão 3D e assistir filmes.<br>
+            Me interesso demais pela área de tecnologia da informação, principalmente o que tange o desenvolvimento de softwares. Ainda não tenho experiencia com desenvolvimento de softwares mas estou aberto para novas oportunidades.</p>
+    </div>    
+    <div id='educacao'class="educacao">
+        <div class="imagem-texto-edu">
+        <img src="educacao.png" class="icon-educacao" alt="https://www.flaticon.com/free-icons/education">
+        <h2>Educação</h2>
+        </div>
+        <ul>
+            <li>2020-2022 Ensino Médio COTIL(Colégio Técnico de Limeira - Unicamp)</li>
+            <li>2021-2022 Ensino Técnico em Fabricação Mecânica</li>
+        </ul>
+    </div>
+    <div id='projetos'class="projetos">
+        <div class="imagem-texto-proj">
+            <img src="projeto.png" class="icon-proj" alt="https://www.flaticon.com/free-icons/project">
+            <h2 class="projeto-titulo">Projetos</h2>
+        </div>
+            <p>Alguns dos projetos que trabalhei:</p>
+    </div>
+
+    <div id="contato" class="contato">
+        <a href="https://www.linkedin.com/in/gabriel-viana-9995ab1b7/">
+            <img src="logo.linkedin.png" alt="" class="logo-linkedin">
+          </a>          
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

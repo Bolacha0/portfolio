@@ -1,0 +1,160 @@
+/* Deixando sem espaços para capa se assentar no width 100% */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.capa {
+    width: 100%;
+    height: 40rem;
+}
+/* configurando o titulo e o sobtitulo para sobrepor a imagem  */
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.subtitulo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+nav a {
+    margin-left: 10rem;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* aqui foi criado um hover basico na barra de navegação horizontal */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* começamos com as divs e seus estilos a partir daqui, primeiro estilei sobre-mim e educacao, para alinhar o titulo do lado do icone */
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.10rem;
+}
+.educacao {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.10rem;
+}
+.icon-sobre-mim {
+width: 3%;
+margin-right: 15px;
+}
+/* configurando o icone dos projetos e educacao, dei uma misturada */
+.icon-proj{
+    margin-top: 2%;
+    width: 5%;
+    height: 2%;
+    margin-right: 15px; 
+}
+.icon-educacao {
+    margin-top: 1%;
+    width: 5%;
+    height: 2%;
+    margin-right: 15px;
+    }
+.icon-proj {
+        width: 4%;
+        height: 2%;
+        margin-right: 15px;
+        }
+.sobre-mim-texto-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+.imagem-texto-edu{
+    display: flex;
+    margin-bottom: 20px; 
+}
+.imagem-texto-proj{
+    display: flex;
+    margin-bottom: 15px; 
+}
+
+h2 {
+    margin-right: 30px; /* Espaçamento entre o ícone e o texto */
+}
+.projeto-titulo{
+    margin-top: 3%;
+}
+
+.sobre-mim,
+.educacao,
+.projetos,
+.contato {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.logo-linkedin{
+    width: 100px;
+    margin: 10px;
+}
+/* parte visual do formulario */
+form {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+/* background do final do site */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* adicionei um media only screen para tornar o design responsivo */
+@media only screen and (max-width: 768px) {
+    nav a {
+        margin-left: 0;
+    }
+}
